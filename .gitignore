@@ -1,0 +1,10 @@
+.tmp/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+app/local-lm-ui.db
+.env
+.env.txt
+.DS_Store
+.claude/
