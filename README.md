@@ -46,13 +46,15 @@ python -m pip install -r requirements.txt
 
 ## Configuration
 
-Create runtime environment variables from the example:
+Generate `.env` with a strong, random `SECRET_KEY`:
 
 ```bash
-cp .env.example .env
+./scripts/setup_env.sh
 ```
 
-Then edit `.env` and set a strong `SECRET_KEY`. For local shell startup:
+This copies `.env.example` to `.env` (if it doesn't already exist) and fills in `SECRET_KEY` with a random 256-bit value. It's safe to re-run — it won't overwrite a `SECRET_KEY` you've already set.
+
+For local shell startup:
 
 ```bash
 set -a
